@@ -26,8 +26,4 @@ app.get("/", (req, res) => {
   res.send("<h1>Zoo app</h1>");
 });
 
-app.listen(port, () => {
-  console.log(`Listening on ${port}`)
-})
-
 module.exports = app;
