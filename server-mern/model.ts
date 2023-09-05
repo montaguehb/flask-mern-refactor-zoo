@@ -20,3 +20,5 @@ const enclosureSchema = new mongoose.Schema({
     environment: String,
     open_to_visitors: Boolean,
 })
+
+module.exports = {animalSchema, zookeeperSchema, enclosureSchema}
