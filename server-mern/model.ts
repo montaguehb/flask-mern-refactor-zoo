@@ -4,8 +4,8 @@ const animalSchema = new mongoose.Schema({
   _id: String,
   name: String,
   species: String,
-  zookeeper_id: String,
-  enclosure_id: String
+  zookeeper_id: {type: mongoose.Schema.Types.ObjectId, ref: "Zookeeper"},
+  enclosure_id: {type: mongoose.Schema.Types.ObjectId, ref: "Enclosure"},
 });
 
 const zookeeperSchema = new mongoose.Schema({
@@ -21,8 +21,8 @@ const enclosureSchema = new mongoose.Schema({
 })
 
 const animal = mongoose.model("Animal", animalSchema);
-const zookeeper = mongoose.model("zookeeper", zookeeperSchema);
-const enclosure = mongoose.model("enclosure", enclosureSchema);
+const zookeeper = mongoose.model("Zookeeper", zookeeperSchema);
+const enclosure = mongoose.model("Enclosure", enclosureSchema);
 
 module.exports = {animal, zookeeper, enclosure};
 export {};
