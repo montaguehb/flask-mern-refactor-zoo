@@ -1,0 +1,1 @@
+const {animalSchema} = require("../model")
