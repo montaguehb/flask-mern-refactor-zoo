@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose")
 
 const animalSchema = new mongoose.Schema({
   _id: Number,
@@ -12,7 +12,6 @@ const zookeeperSchema = new mongoose.Schema({
   _id: Number,
   name: String,
   birthday: Date,
-  animal_id: Number
 });
 
 const enclosureSchema = new mongoose.Schema({
@@ -21,4 +20,8 @@ const enclosureSchema = new mongoose.Schema({
     open_to_visitors: Boolean,
 })
 
-module.exports = {animalSchema, zookeeperSchema, enclosureSchema}
+const animal = mongoose.model("Animal", animalSchema);
+const zookeeper = mongoose.model("zookeeper", zookeeperSchema);
+const enclosure = mongoose.model("enclosure", enclosureSchema);
+
+module.exports = {animal, zookeeper, enclosure};

@@ -4,5 +4,7 @@
         "node",
         "jest"
       ],
+      "esModuleInterop": true,
+      "moduleResolution": "Node"
     },
   }

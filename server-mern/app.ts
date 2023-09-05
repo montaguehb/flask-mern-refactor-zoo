@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 5555;
 
 //create 4 routes
 // "/" the default route which is just an h1 element with the text zoo app
