@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require("express");
 const app = express();
 const port = 5555;
 
@@ -10,8 +10,16 @@ app.get("/", (req, res) => {
 
 // "/animal/int:id" returns an unordered list containg the animal's information for
 // the animal, who's id matches the url.
-app.get("/", (req, res) => {
-  res.send("<h1>Zoo app</h1>");
+app.get("/animal/:id", (req, res) => {
+  res.send(`
+  <li>
+    <ul>ID: {animal.id}</ul>
+    <ul>Name: {animal.name}</ul>
+    <ul>Species: {animal.species}</ul>
+    <ul>Zookeeper: {animal.zookeeper.name}</ul>
+    <ul>Enclosure: {animal.enclosure.environment}</ul>
+  </li>
+  `);
 });
 
 // "/zookeeper/int:id" returns an unordered list containg the zookeeper's information for
