@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0ba2353f0ded9f8013062ae408e3791f17498662037db9c1489eeb8da9ee5361"
+            "sha256": "a28a2fe6743353edcb1b36bf3f82b7798d062cd155113701b3b422987e28e122"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -14,6 +14,7 @@
                 "verify_ssl": true
             }
         ]
+      
     },
     "default": {
         "alembic": {
@@ -87,11 +88,11 @@
         },
         "flask": {
             "hashes": [
-                "sha256:7eb373984bf1c770023fce9db164ed0c3353cd0b53f130f4693da0ca756a2e6d",
-                "sha256:c0bec9477df1cb867e5a67c9e1ab758de9cb4a3e52dd70681f59fa40a62b3f2d"
+                "sha256:58107ed83443e86067e41eff4631b058178191a355886f8e479e347fa1285fdf",
+                "sha256:edee9b0a7ff26621bd5a8c10ff484ae28737a2410d99b0bb9a6850c7fb977aa0"
             ],
             "index": "pypi",
-            "version": "==2.2.3"
+            "version": "==2.2.5"
         },
         "flask-migrate": {
             "hashes": [
@@ -378,11 +379,11 @@
         },
         "pygments": {
             "hashes": [
-                "sha256:77a3299119af881904cd5ecd1ac6a66214b6e9bed1f2db16993b54adede64094",
-                "sha256:f7e36cffc4c517fbc252861b9a6e4644ca0e5abadf9a113c72d1358ad09b9500"
+                "sha256:13fc09fa63bc8d8671a6d247e1eb303c4b343eaee81d861f3404db2935653692",
+                "sha256:1daff0494820c69bc8941e407aa20f577374ee88364ee10a98fdbe0aece96e29"
             ],
-            "index": "pypi",
-            "version": "==2.15.0"
+            "markers": "python_full_version >= '3.7.0'",
+            "version": "==2.16.1"
         },
         "pytest": {
             "hashes": [
@@ -506,7 +507,7 @@
                 "sha256:679e51dd4403591b2d6838a48de3d283f3d188412a9782faadf845f298736ba0",
                 "sha256:ebc15946aa78bd63458992fc81ec3b6f7b1e92d51c35e6de1c3804e73b799147"
             ],
-            "markers": "python_version >= '3.8'",
+            "markers": "python_version < '3.10'",
             "version": "==3.16.2"
         }
     },
