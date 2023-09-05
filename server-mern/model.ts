@@ -25,3 +25,4 @@ const zookeeper = mongoose.model("zookeeper", zookeeperSchema);
 const enclosure = mongoose.model("enclosure", enclosureSchema);
 
 module.exports = {animal, zookeeper, enclosure};
+export {};

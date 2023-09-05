@@ -1,8 +1,13 @@
 const { faker } = require("@faker-js/faker")
 const mongoose = require("mongoose");
 const model = require("../model")
+require('dotenv').config();
 
-mongoose.connect("mongodb://127.0.0.1:3050");
+if (!process.env.MONGODB_URI) {
+  console.warn("Missing MONGODB_URI in env, please add it to your .env file");
+}
+
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 
 const createZookeepers = () => {
   model.zookeeper.deleteMany({});

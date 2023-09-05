@@ -44,3 +44,5 @@ describe("Has a resource at '/enclosure/:id'", () => {
     expect(resp.text).toMatch(/\<ul\>[Aa]nimal.+/);
   });
 });
+
+export {};
