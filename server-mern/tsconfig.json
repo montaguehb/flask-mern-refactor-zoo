@@ -5,6 +5,10 @@
         "jest"
       ],
       "esModuleInterop": true,
-      "moduleResolution": "Node"
+      "moduleResolution": "Node",
+      "target": "ES2022",
+      "module": "CommonJS",
+      "sourceMap": true,
+      "outDir": "build"
     },
   }
